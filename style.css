@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.txtshadow{
+    text-shadow: 2px 2px 2px blue;
+    font-size: 30px;
+}
+
+.txtwordwrap{
+    font-size: 30px;
+    width: 300px;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+.animationcss3{
+    width: 100%;
+    height: 300px;
+ background-color: cyan   
+}
+
+.ninjabhago{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.ninjabhago img{
+    width: 140px;
+    height: 120px;
+    position: absolute;
+    animation-name: nijahatodi;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes nijahatodi{
+    from{left:  0}
+    to{left:  85%}
+}
+
+/*-----Transisition in css3...*/
+
+h2{
+    font-size: 30px;
+}
+.love{
+    height: 50px;
+    width: 50px;
+    transition-property: width,height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+/*------Multi coloumn in css3--*/
+
+.column{
+    column-count: 3;
+    column-gap: 50px;
+    text-align: justify;
+    column-rule: dashed;
+}
+.love:hover{
+    width: 100px;
+    height: 100px;
+}
+
+/*------background in css3--*/
+
+.bg_img{
+    width: 300px;
+    height: 300px;
+    background-image:url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*------box sizing in css3--*/
+.boxsizing{
+    width: 300px;
+    height: 100px;
+    background: black;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.boxsizing p{
+    
+    color: white;
+}
+
+/*------2d transform in css3--*/
+.transform{
+    width: 800px;
+    height: 100px;
+    background: black;
+    
+    box-sizing: border-box;
+}
+
+.transform p{
+    transform: translatex(50px);
+    color: white;
+    
+}
+
+.rotate{
+    
+    width: 300px;
+    height: 100px;
+    background: black;
+    
+    box-sizing: border-box;
+}
+.rotatetext{
+    transform: translatex(50px);
+
+    transition: transform 2s;
+}
+
+.texteffect{
+    transition: transform 2s;
+}
+.texteffect:hover{
+    
+    transform: rotate(360deg);
+}
+
+/*-- Gradient in css 3..*/
+
+.gradint{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to left,#790967,#00d4ff);
+}
+
+/*-- felxbox in css 3..*/
+
+.flexboxparent{
+    width: 100%;
+    height: 100px;background-image: linear-gradient(to left,#790967,#00d4ff);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
